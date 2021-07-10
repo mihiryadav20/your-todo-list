@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO APP</title>
+</head>
+<style>
+    body{
+        background-color: #6495ED;
+         
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 100px;
+        
+    }
+
+    .container{
+        border-radius: 10px;
+        max-width: 500px;
+        margin: auto;
+        background-color:#CCCCFF;
+    }
+
+    .delete-link{
+        text-decoration: none;
+        color: darkgreen;
+        font-weight: 900;
+        font-size: 25px;
+
+    }
+    .mod-link
+    {
+        text-decoration: none;
+        font-family: 'Roboto Condensed';
+        font-size: 25px;
+        color: brown;
+
+    }
+    .back{
+        text-decoration: none;
+         
+        font-size: 25px;
+        color:red;
+
+    }
+    .add{
+        text-decoration: none;
+        color: darkblue;
+        font-weight: bold;
+        font-size: 50px;
+    }
+</style>
+<body>
+
+    
+    <div class="container">
+    {% block content %}
+    
+    {% endblock content%}
+    </div>
+</body>
+</html>

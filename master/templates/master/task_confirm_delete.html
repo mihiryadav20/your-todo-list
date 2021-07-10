@@ -1,0 +1,15 @@
+{% extends 'master/main.html' %}
+{% block content %}
+<center>
+    <a class="back" href="{% url 'index' %}">&#8656;</a>
+    <form method="POST">
+    
+        {% csrf_token %}
+        <p>HAVE YOU FINISHED THIS TASK "{{task}}"?</p>
+        <input type="submit" value="DONE" />
+    </form> 
+    </center>    
+{% endblock content%}
+
+
+
